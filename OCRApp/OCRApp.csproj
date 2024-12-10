@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="tessdata/**">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+		<PackageReference Include="Tesseract" Version="5.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="C:\Users\User\.nuget\packages\tesseract\5.2.0\build\\..\x86\leptonica-1.82.0.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="C:\Users\User\.nuget\packages\tesseract\5.2.0\build\\..\x86\tesseract50.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="C:\Users\User\.nuget\packages\tesseract\5.2.0\build\\..\x64\leptonica-1.82.0.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="C:\Users\User\.nuget\packages\tesseract\5.2.0\build\\..\x64\tesseract50.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="C:\Users\User\.nuget\packages\tesseract\5.2.0\build\\..\x86\leptonica-1.82.0.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="C:\Users\User\.nuget\packages\tesseract\5.2.0\build\\..\x86\tesseract50.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="testdata\" />
+	</ItemGroup>
+
+</Project>
